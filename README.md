@@ -19,23 +19,18 @@ h1 {
 }
 
 .game-board {
-    width: 360px;
-    margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto;
 }
 
 .card {
-    width: 80px;
-    height: 100px;
-    background: #6b8e23;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
+    width: 100%;
+    aspect-ratio: 2 / 3;
 }
+
 
 .card.flip {
     transform: rotateY(180deg);
@@ -50,13 +45,16 @@ h1 {
 }
 
 .front {
-    background: #6b8e23;
+    background-image: url("5.jpg");
+
 }
 
 .back {
     transform: rotateY(180deg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 #moves {
