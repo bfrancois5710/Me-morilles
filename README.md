@@ -32,10 +32,8 @@ h1 {
 }
 
 .card {
-    .card {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    width: 150px;
+    height: 220px;
 }
 
 .card.flip {
