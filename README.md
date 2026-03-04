@@ -25,9 +25,10 @@ body::before {
 }
 
 /* TITRE & COMPTEUR */
-h1 { margin-top: 20px; }
-#moves { margin-top: 10px; font-size: 18px; }
-
+h1 {
+    margin-top: 20px;
+    font-family: Impact, Charcoal, sans-serif;
+}
 /* ÉCRAN DE VICTOIRE */
 #winScreen {
     display: none;
@@ -138,7 +139,7 @@ const movesDisplay = document.getElementById("moves");
 const winScreen = document.getElementById("winScreen");
 
 // Son succès
-const successSound = new Audio("success.mp3");
+const successSound = new Audio("success1.mp3");
 
 // Mélanger
 function shuffle(array){ array.sort(() => 0.5 - Math.random()); }
