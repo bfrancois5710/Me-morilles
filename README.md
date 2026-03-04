@@ -56,7 +56,7 @@ h1 {
 }
 
 .front {
-    background-image: url("5.jpg");
+    background-image: url("mm5.jpg");
 
 }
 
