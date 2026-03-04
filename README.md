@@ -4,11 +4,11 @@ Me-morilles is a memory game card
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Me_morille 🍄</title>
+<title>🍄 Me_morilles 🍄</title>
 
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: Playfair, sans-serif;
     background-image: url("tout-savoir-sur-la-foret.jpg");
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ button {
 
 <body>
 
-<h1>Me_morille 🍄</h1>
+<h1>🍄 Me_morille 🍄</h1>
 <p>Retrouve les paires de morilles !</p>
 <div id="moves">Coups : 0</div>
 
@@ -185,13 +185,21 @@ function checkWin() {
             alert("Bravo ! Tu es un maître des morilles 🍄✨");
         }, 500);
     }
-}
 
 function restartGame() {
     moves = 0;
-    movesDisplay.textContent = "Coups : 0";
+    movesDisplay.textContent = "Coups : 2";
     createBoard();
+}#winMessage {
+    animation: pop 0.5s ease forwards;
 }
+
+@keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
 
 createBoard();
 </script>
