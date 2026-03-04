@@ -38,12 +38,11 @@ h1 {
 
 /* 🏆 IMAGE FINALE */
 #winScreen {
-    display: none;
+    display: none;   /* IMPORTANT */
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(5px);
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
