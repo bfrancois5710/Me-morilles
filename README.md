@@ -108,9 +108,9 @@ h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* iOS */
+    border-radius: 20px;
 }
 
 .front {
