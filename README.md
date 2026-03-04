@@ -87,10 +87,11 @@ button {
 
 <script>
 const images = [
-    "https://upload.wikimedia.org/wikipedia/commons/1/1e/Morchella_esculenta.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/4/4f/Morchella_conica.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/5/5b/Morchella_elata.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/9/9b/Morchella_angusticeps.jpg"
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg"
+
 ];
 
 let cardsArray = [...images, ...images];
