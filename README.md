@@ -182,6 +182,7 @@ function shuffle(array) {
 function createBoard() {
     board.innerHTML = "";
     shuffle(cardsArray);
+
     cardsArray.forEach(image => {
         const card = document.createElement("div");
         card.classList.add("card");
@@ -192,11 +193,14 @@ function createBoard() {
 
         const back = document.createElement("div");
         back.classList.add("back");
-        back.style.backgroundImage = `url(${image})`;
+
+        // ⚠️ ICI C’EST IMPORTANT
+        back.style.backgroundImage = "url('" + image + "')";
 
         card.appendChild(front);
         card.appendChild(back);
-
+    });
+}
         card.addEventListener("click", flipCard);
         board.appendChild(card);
     });
