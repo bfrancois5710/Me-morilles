@@ -114,7 +114,7 @@ h1 {
 }
 
 .front {
-    background-image: url("Bbm6.jpg");
+    background-image: url("bbm7jpg.JPG");
     background-size: cover;
     background-position: center;
     transform: rotateY(0deg);
