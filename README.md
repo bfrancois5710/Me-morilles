@@ -39,10 +39,35 @@ h1 {
 /* 🏆 IMAGE FINALE */
 #winScreen {
     display: none;
-    margin-top: 20px;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    animation: fadeIn 0.6s ease forwards;
 }
 
 #winScreen img {
+    width: 60%;
+    max-width: 600px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    animation: zoomIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
     width: 300px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
