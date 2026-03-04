@@ -98,6 +98,7 @@ h1 {
 }
 
 .back {
+    background-image: url("1.jpg")
     transform: rotateY(180deg);
     background-size: cover;
     background-position: center;
