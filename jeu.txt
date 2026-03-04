@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Me_morille 🍄</title>
+<title>Me_morilles 🍄</title>
 
 <style>
 /* ---- FOND DE PAGE ---- */
 body {
     font-family: Arial, sans-serif;
-    background-image: url("fond_foret.jpg"); /* ton fond perso */
+    background-image: url("tout-savoir-sur_la_foret.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,3 +133,4 @@ const movesDisplay = document.getElementById("moves");
 // ---- FONCTIONS ----
 function shuffle(array) {
     array.sort(() => 0.5
+
